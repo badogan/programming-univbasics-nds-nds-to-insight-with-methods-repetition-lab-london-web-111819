@@ -11,10 +11,10 @@ def directors_totals(source)
   result
 end
 
-def gross_for_director(a_specific_director)
+def gross_for_director(specific_director)
   total_for_the_specific_director = 0 ;  index = 0
-  while index < a_specific_director[:movies].length do
-    total_for_the_specific_director += a_specific_director[:movies][index][:worldwide_gross]
+  while index < specific_director[:movies].length do
+    total_for_the_specific_director += specific_director[:movies][index][:worldwide_gross]
     index += 1
   end
   total_for_the_specific_director
@@ -52,5 +52,4 @@ def total_gross(source)
 end
 
 require 'pry'
-a=total_gross(directors_database)
-binding.pry
+#a=total_gross(directors_database)
