@@ -21,8 +21,10 @@ def gross_for_director(a_specific_director)
 end
 
 def list_of_directors(source)
-  # Write this implementation
-  outer = 0 ;  array_list_of_directors =[]
+#Objective:   Extracts the diretor names from the source hash
+#Input        The whole db and its "first level"/key has the names of the directors
+  
+  index = 0 ;  array_list_of_directors =[]
   while outer < source.length do
     array_list_of_directors[outer] = source[outer][:name]
     outer += 1 
