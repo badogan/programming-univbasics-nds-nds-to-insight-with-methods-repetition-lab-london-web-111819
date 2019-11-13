@@ -52,5 +52,5 @@ def total_gross(source)
 end
 
 require 'pry'
-total_gross(directors_database)
+a=total_gross(directors_database)
 binding.pry
