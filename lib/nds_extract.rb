@@ -23,11 +23,12 @@ end
 def list_of_directors(source)
 #Objective:   Extracts the diretor names from the source hash
 #Input        The whole db and its "first level"/key has the names of the directors
+#Output:      Array of director names
   
   index = 0 ;  array_list_of_directors =[]
-  while outer < source.length do
-    array_list_of_directors[outer] = source[outer][:name]
-    outer += 1 
+  while index < source.length do
+    array_list_of_directors[index] = source[index][:name]
+    index += 1 
   end
   array_list_of_directors
 end
@@ -50,4 +51,6 @@ def total_gross(source)
   grand_total
 end
 
-#ltotal_gross(directors_database)
+require 'pry'
+total_gross(directors_database)
+binding.pry
