@@ -44,8 +44,8 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
   grand_total = 0 ; index = 0
-  while index < list_of_directors(source).length do
-    grand_total +=  directors_totals(source)[list_of_directors(source)[index]]
+  while index < list_of_directors(source).length do #list_of_directors is called ONCE!
+    grand_total +=  directors_totals(source)[list_of_directors(source)[index]] #array received from list_of_directors is ITERATED
     index += 1 
   end
   grand_total
