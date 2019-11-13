@@ -12,12 +12,12 @@ def directors_totals(source)
 end
 
 def gross_for_director(a_specific_director)
-  total = 0 ;  index = 0
+  total_for_the_specific_director = 0 ;  index = 0
   while index < a_specific_director[:movies].length do
-    total += a_specific_director[:movies][index][:worldwide_gross]
+    total_for_the_specific_director += a_specific_director[:movies][index][:worldwide_gross]
     index += 1
   end
-  total
+  total_for_the_specific_director
 end
 
 def list_of_directors(source)
